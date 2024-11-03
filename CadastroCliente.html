@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cadastroCliente.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>AgroLink - Cadastro</title>
+</head>
+
+<body>
+ 
+
+    <div id="geral">
+        <img src="img/imgCadastro.png" alt="" id="desk">
+        <img src="img/imgLogin.png" alt="" id="resp">
+    
+        <div id="conteinerCadastro">
+            <img src="img/logoFooter.png" alt="" id="desk">
+            <h3 id="desk">Cadastro</h3>
+            
+           
+            <div id="contresp">
+                <h3 id="resp">Cadastro</h3>
+                <img src="img/logoFooter.png" alt="Logo da empresa">
+            </div>
+    
+            
+            <div id="inputsCadastro">
+                <div class="linha">
+                    <div class="conteinerInput">
+                        <p>Nome:</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="conteinerInput">
+                        <p>CPF/CNPJ:</p>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="conteinerInput">
+                        <p>Telefone:</p>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="linhaTres">
+                    <div class="conteinerInput">
+                        <p>CEP:</p>
+                        <input type="text" id="cep">
+                    </div>
+                    <div class="conteinerInput">
+                        <p>Estado:</p>
+                        <input type="text" id="estado">
+                    </div>
+                    <div class="conteinerInput">
+                        <p>Cidade:</p>
+                        <input type="text" id="cidade">
+                    </div>
+                </div>
+
+                <div class="linha">
+                    <div class="conteinerInput">
+                        <p>Endereço:</p>
+                        <input type="text" id="bairro">
+                    </div>
+
+                    <div class="conteinerInput">
+                        <p>Complemento (Apto, casa):</p>
+                        <input type="text">
+                    </div>
+                </div>
+
+
+                <div class="linhaTres">
+                    <div class="conteinerInput">
+                        <p>Email:</p>
+                        <input type="text">
+                    </div>
+
+                    <div class="conteinerInput">
+                        <p>Senha:</p>
+                        <input type="text">            
+                    </div>
+
+                    <div class="conteinerInput">
+                        <p>Confimar senha:</p>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <a href="LoginCliente.html"><button type="button">SALVAR</button></a>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $("#cep").blur(function(){
+            var cep = $(this).val();
+            $.get("https://viacep.com.br/ws/"+cep+"/json/", function(dados, status){
+                $("#cidade").val(dados.localidade);
+                $("#estado").val(dados.uf);
+                $("#bairro").val(dados.bairro);
+            })
+        })
+    </script>
+
+</body>
+
+</html>

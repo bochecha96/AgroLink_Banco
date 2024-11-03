@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-direction: row;
+    padding: 1% 0;
+    padding-top: 20px;
+}
+
+#simbMenu{
+    display: none;
+}
+
+#menu_mobile{
+    position:fixed;
+    top: 78px;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    justify-content: flex-end;
+}
+
+#conteinerMenu{
+    background: white;
+    width: 54%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #615f5f;
+    border-left: 1px solid #615f5f;
+}
+
+.logo p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.navbar a {
+    font-family: "Cairo", sans-serif;
+    color: black;
+}
+
+.navbar img {
+    width: 10%;
+}
+
+.options {
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 10px 10px 60px;
+    background-color: #C8854F;
+    width: 554px;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 18px;
+}
+
+.option a {
+    font-family: "Cairo", sans-serif;
+    color: white;
+}
+
+#infoCima {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cima {
+    width: 90%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#adicionarItens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3% 12% 0%;
+    align-items: center;
+    border: 1px solid #000000;
+    font-family: "Cairo", sans-serif;
+}
+
+.dois {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.dois input {
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid #b6afaf;
+    padding-left: 3%;
+}
+
+.dois select {
+    width: 100%;
+    height: 44px;
+    border-radius: 5px;
+    margin-left: 2%;
+    border: 1px solid #b6afaf;
+    padding-left: 5%;
+}
+
+.dois div {
+    width: 32%;
+    margin-left: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+
+h1 {
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo p {
+    margin-left: 50px;
+    font-family: "Cairo", sans-serif;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#inputComIcon {
+    display: flex;
+    align-items: center;
+    width: 48%;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+#Continerfiltro {
+    width: 46%;
+    height: 41px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#img1 {
+    margin-right: 4%;
+}
+
+
+.inputt {
+    width: 48%;
+}
+
+.dupla {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Continerfiltro svg{
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+}
+
+#pesquisa {
+    width: 100%;
+    height: 41px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+#categoria {
+    width: 100%;
+    height: 44px;
+    border-radius: 25px;
+    border: solid black 1px;
+    padding-left: 5%;
+}
+
+input {
+    outline: 0;
+}
+
+#filtro {
+    width: 100%;
+    height: 41px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+#conteinerButtonAddItem {
+    width: 95%;
+    display: flex;
+    justify-content: end;
+}
+
+#conteinerButtonAddItem button {
+    padding: 1% 4%;
+    background-color: #f9b300;
+    border: 1px solid #282626;
+    border-radius: 20px;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+#conteinerAdicionar {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#adicionarItens {
+    border-radius: 13px;
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 1px solid #282626;
+}
+
+.adcProdButton {
+    margin-bottom: 3%;
+}
+
+#conteinerFechar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+#titAddItem {
+    padding: 1% 4%;
+    background-color: #f9b300;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 12px 0 20px 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+#contenierBtn {
+    width: 92%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#titAddItem p {
+    font-family: 'Cairo';
+    font-size: large;
+    font-weight: 600;
+}
+
+#conteinerFechar button {
+    border: none;
+    background: #C8854F;
+    margin: 1% 2% 0 0;
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid #8a5931;
+    font-size: large;
+    border-radius: 50%;
+}
+
+#filtro,
+#pesquisa::placeholder {
+    font-family: "Cairo", sans-serif;
+    padding-left: 20px;
+}
+
+.adcProdButton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    padding: 1% 5%;
+    background-color: rgb(65, 190, 65);
+    border-radius: 12px;
+    border: 1px solid #615f5f;
+
+}
+
+.adcProdButton:hover {
+    background-color: #f9b300;
+    border: 1px solid #615f5f;
+    cursor: pointer;
+}
+
+
+.produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.tabela {
+
+    width: 100%;
+    max-width: 1493px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+tr .imgtit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+}
+
+table button {
+    background-color: transparent;
+    border: none;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    padding: 8px;
+    font-weight: 400;
+
+}
+
+table img {
+    width: 80px;
+}
+
+table button img {
+    width: 40px;
+}
+
+table button img:hover {
+    width: 38px;
+    cursor: pointer;
+}
+
+#valor {
+    font-weight: 600;
+    font-size: large;
+}
+
+.options img {
+    display: none;
+}
+
+.delet {
+    background: #e04949;
+}
+
+.anula {
+    display: block;
+}
+
+@media screen and (max-width:430px) {
+    .option {
+        display: flex;
+        align-items: flex-start;
+        padding: 2% 0;
+        background-color: #C8854F;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 18px;
+        width: 45%;
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+
+    .option a {
+        margin: 5% 0 0 18%;
+        font-size: smaller;
+    }
+
+    .options img {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 43%;
+    }
+
+    #valor {
+        margin: 0;
+    }
+
+    .options {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    header #simbMenu {
+        display: block;
+        margin-left: 15%;
+    }
+
+    header {
+        width: auto;
+        margin: 0% 5%;
+        justify-content: space-between;
+        padding: 5% 2%;
+    }
+
+    #conteinerMenu{
+        display: flex;
+    }
+
+    #conteinerMenu a{
+        color: #383838;
+        padding: 3% 0% 3% 14%;
+        display: flex;
+        align-items: center;
+        font-family: "Cairo", sans-serif;
+        justify-content: start;
+    }
+
+    #conteinerMenu svg{
+        margin-right: 15%;
+    }
+
+    #conteinerMenu button{
+        background-color: #F7FFE5;
+        height: 32px;
+        text-align: center;
+        border: none;
+        padding: 0 25%;
+        box-shadow: 2px 2px 5px rgb(187 187 187);
+        border-radius: 50px;
+    }
+
+    .inputs {
+        align-items: flex-start;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    #pesquisa {
+        width: 100%;
+        height: 36px;
+    }
+
+    #infoCima {
+        width: 100%;
+    }
+
+    #inputComIcon {
+        width: 100% !important;
+        margin-bottom: 2%;
+    }
+
+    .dupla {
+        width: 100%;
+    }
+
+
+    #adicionarItens {
+        width: 90%;
+        margin: 0;
+        margin-top: 10%;
+    }
+
+    .dois input {
+        width: 95%;
+        padding: 0;
+    }
+
+    #conteinerAdicionar {
+        display: none;
+    }
+
+    .dois {
+        display: flex;
+        width: 90%;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .dois div {
+        width: 100%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .dois select {
+        width: 95%;
+    }
+
+    thead {
+        width: 100%;
+    }
+
+    tbody {
+        width: 100%;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    tr .imgtit {
+        gap: 0;
+        font-size: small;
+    }
+
+    .imgtit img {
+        width: 20%;
+        padding: 0 0 0 3%;
+    }
+
+    #nome {
+        width: 95%;
+    }
+
+    th {
+        font-size: xx-small;
+    }
+
+    .imgtit p {
+        font-size: x-small;
+        text-align: left;
+        margin: 0 3% 0 3%;
+    }
+
+
+    #filtro {
+        height: 30px;
+    }
+
+    td {
+        padding: 0;
+        font-size: x-small;
+    }
+
+    .delet svg{
+        width: 15px;
+    }
+
+    .tabela {
+        margin-top: 2%;
+    }
+
+    #conteinerButtonAddItem button{
+        margin-top: 2%;
+    }
+
+    #categoria{
+        height: 32px;
+    }
+
+    #valor {
+        font-size: x-small;
+    }
+
+    table button img {
+        width: 30%;
+    }
+
+    .anula {
+        display: none;
+    }
+
+    h1 {
+        font-size: large;
+        margin-right: 5%;
+    }
+
+    .titulo {
+        width: 85%;
+    }
+
+    .titulo p {
+        font-size: smaller;
+        margin-left: 0;
+    }
+
+    .cima {
+        width: 88%;
+    }
+
+    .produtos {
+        width: 100%;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    #Continerfiltro {
+        width: 46%;
+        height: 30px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 50px;
+    }
+
+    #img2 {
+        margin: 0;
+    }
+
+    #titAddItem p{
+        font-size: medium;
+    }
+
+    .adcProdButton{
+        border-radius: 9px;
+        padding: 1% 6%;
+    }
+}

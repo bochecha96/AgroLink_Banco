@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1% 0;
+    box-shadow: 0px 4px 18px rgb(203 203 203);
+}
+
+header #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header #logo p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: 0;
+    margin-left: 5%;
+}
+
+#divBusca {
+    background-color: #F7FFE5;
+    border-radius: 20px;
+    width: 45%;
+    height: 32px;
+    display: flex;
+    box-shadow: 2px 2px 5px rgb(187 187 187);
+}
+
+#divBusca button {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    margin-right: 3%;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 3%;
+    font-size: 16px;
+    width: 100%;
+    border: transparent;
+    border-radius: 15px;
+    outline: 0;
+    font-family: "Cairo", sans-serif;
+}
+
+#botoesHeader {
+    display: flex;
+    align-items: center;
+}
+
+#botoesHeader a {
+    color: #383838;
+    font-family: "Cairo", sans-serif;
+    margin: 0;
+    margin-right: 12%;
+}
+
+#botoesHeader button {
+    background-color: #F7FFE5;
+    height: 32px;
+    text-align: center;
+    border: none;
+    padding: 0 25%;
+    box-shadow: 2px 2px 5px rgb(187 187 187);
+    border-radius: 50px;
+}
+
+footer {
+    background-color: #F7FFE5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3% 0;
+    margin-top: 3%;
+}
+
+footer #contato {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #contato #formularioContato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #contato p {
+    color: #3B9B12;
+    font-size: larger;
+    font-family: "Cairo", sans-serif;
+    font-weight: 800;
+}
+
+footer #contato #formularioContato input {
+    margin-bottom: 3%;
+    padding: 2% 0 2% 3%;
+    box-shadow: 2px 2px 5px rgb(100, 100, 100);
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+}
+
+footer #contato #formularioContato textarea {
+    padding: 2% 0 2% 3%;
+    box-shadow: 2px 2px 5px rgb(100, 100, 100);
+    border: none;
+    border-radius: 10px;
+    height: 100px;
+    resize: none;
+    outline: 0;
+}
+
+footer #contato #formularioContato #conteinerEnviar {
+    width: 100%;
+    text-align: end;
+}
+
+footer #contato #formularioContato #conteinerEnviar button {
+    background-color: #3B9B12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    padding: 1% 5%;
+    margin-top: 3%;
+}
+
+footer img {
+    width: 25%;
+}
+
+footer #conteinerFooter {
+    width: 15%;
+    text-align: end;
+    align-items: end;
+}
+
+footer #conteinerFooter #links {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 15%;
+}
+
+footer #conteinerFooter #links a {
+    padding-bottom: 5%;
+    color: #383838;
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+}
+
+
+#conteinerRedesSociais {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #redesSociais p {
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+footer #redesSociais {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+
+
+#geral {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+#geral img {
+    width: 35%;
+}
+
+#geral .detalhes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#geral .detalhes h3 {
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    margin-top: 3%;
+}
+
+#geral .detalhes .avaliacao {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#geral .detalhes .avaliacao .nota {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#geral .detalhes .avaliacao .quantAvaliacao {
+    width: 20%;
+}
+
+#geral .detalhes .avaliacao .quantVendida {
+    width: 20%;
+}
+
+#geral .detalhes .avaliacao .nota .estrelas {
+    width: 80%;
+}
+
+#geral .detalhes .avaliacao p {
+    font-family: "Cairo", sans-serif;
+    font-size: medium;
+    margin: 0 !important;
+}
+
+#geral .detalhes hr {
+    width: 5%;
+    rotate: 90deg;
+}
+
+#geral .detalhes .avaliacao .quantAvaliacao,
+.quantVendida {
+    text-align: center;
+}
+
+#geral .detalhes .descricao {
+    width: 90%;
+    text-align: left;
+    font-family: "Cairo", sans-serif;
+    font-size: medium;
+    margin-top: 5%;
+}
+
+#geral .detalhes .valor {
+    font-size: x-large;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+#geral .detalhes .quant {
+    width: 20%;
+    border: 1px solid #383838;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#geral .detalhes .quant button {
+    font-family: "Cairo", sans-serif;
+    font-size: large;
+    font-weight: 700;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    margin: 4% 0;
+}
+
+#geral .detalhes .quant .quantidade {
+    margin-bottom: 0;
+    font-size: large;
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+    border-left: 1px solid #383838;
+    border-right: 1px solid #383838;
+}
+
+#geral .detalhes .botoesProduto {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+#geral .detalhes .botoesProduto .adicionarCarrinho {
+    width: 60%;
+    background-color: #FFD76F;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-family: 'Cairo';
+    padding: 3% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#geral .detalhes .botoesProduto .compreAqui {
+    background-color: #9CF473;
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-family: 'Cairo';
+    padding: 3% 0;
+}
+
+#empresa {
+    width: 100%;
+    background-color: #F7FFE5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 3% 0;
+}
+
+#empresa #empresaPerfil {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2% 0;
+}
+
+#empresa #empresaPerfil div {
+    padding-left: 3%;
+}
+
+#empresa #buttonsEmpresa {
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#empresa #buttonsEmpresa a {
+    background-color: white;
+    border: none;
+    box-shadow: 0px 4px 18px rgb(203 203 203);
+    width: 45%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+}
+
+#empresa #buttonsEmpresa button {
+    background-color: transparent;
+    border: none;
+}
+
+header #simbMenu {
+    display: none;
+}
+
+#menu_mobile{
+    position: fixed;
+    top: 78px;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    justify-content: flex-end;
+}
+
+#conteinerMenu{
+    background: white;
+    width: 54%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #282626;
+    border-left: 1px solid #282626;
+}
+
+#conteinerMenu{
+    display: flex;
+}
+
+hr{
+    margin: 0;
+}
+
+#conteinerMenu a{
+    color: #383838;
+    padding: 3% 0% 3% 14%;
+    display: flex;
+    align-items: center;
+    font-family: "Cairo", sans-serif;
+    justify-content: start;
+}
+
+#conteinerMenu svg{
+    margin-right: 15%;
+}
+
+#conteinerMenu button{
+    background-color: #F7FFE5;
+    height: 32px;
+    text-align: center;
+    border: none;
+    padding: 0 25%;
+    box-shadow: 2px 2px 5px rgb(187 187 187);
+    border-radius: 50px;
+}
+
+@media (max-width: 430px) {
+
+    #divBusca {
+        display: none;
+    }
+
+    #botoesHeader {
+        display: none;
+    }
+
+    header #simbMenu {
+        display: block;
+        margin-left: 15%;
+    }
+
+    header {
+        justify-content: space-around;
+        padding: 5% 0;
+    }
+
+    header #logo img {
+        width: 34%;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 22px;
+        height: 3px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1rem;
+    }
+
+    section p {
+        font-size: medium;
+        margin-top: 5%;
+        text-align: justify;
+    }
+
+    .conteinerAssinatura {
+        display: none;
+
+    }
+
+    menu {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2%;
+    }
+
+    #geral {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    #geral .detalhes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #geral .detalhes .avaliacao {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 2%;
+    }
+
+    #geral .detalhes .avaliacao .nota {
+        flex-direction: column;
+    }
+
+    #geral img {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    footer #contato,
+    footer #conteinerFooter {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer #contato #formularioContato input,
+    footer #contato #formularioContato textarea {
+        width: 100%;
+    }
+
+    footer img {
+        width: 50%;
+    }
+
+    #conteinerRedesSociais {
+        align-items: center;
+    }
+
+    #empresa {
+        width: 100%;
+        background-color: #F7FFE5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 3% 0;
+    }
+
+    #empresa {
+        flex-direction: column;
+
+    }
+
+    #empresa #empresaPerfil {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2% 0;
+    }
+
+    #empresa #empresaPerfil p {
+        width: 95%;
+    }
+
+    #geral .detalhes .botoesProduto {
+        width: 100%;
+
+    }
+
+    #empresa #empresaPerfil div {
+        margin-top: 3%;
+        width: 90%;
+        padding-left: 3%;
+    }
+
+    #empresa #buttonsEmpresa {
+        width: 85%;
+        padding-bottom: 20px;
+    }
+
+    #geral .detalhes .descricao {
+        width: 95%;
+    }
+
+    #conteinerRedesSociais{
+        width: 50%;
+    }
+
+    #empresa #buttonsEmpresa a {
+        width: 48%;
+    }
+
+    #geral .detalhes .avaliacao .nota .estrelas {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

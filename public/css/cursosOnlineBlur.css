@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    flex-direction: row;
+    padding: 1% 0;
+    padding-top: 20px;
+}
+
+#simbMenu{
+    display: none;
+}
+
+#menu_mobile{
+    position:fixed;
+    top: 78px;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    justify-content: flex-end;
+}
+
+#conteinerMenu{
+    background: white;
+    width: 54%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #615f5f;
+    border-left: 1px solid #615f5f;
+}
+
+.logo p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.navbar a {
+    font-family: "Cairo", sans-serif;
+    color: black;
+}
+
+.navbar img {
+    width: 10%;
+}
+
+.options {
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 10px 10px 60px;
+    background-color: #C8854F;
+    width: 554px;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 22px;
+}
+
+.option a {
+    font-family: "Cairo", sans-serif;
+    color: white;
+}
+
+
+#infoCima{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.cima{
+    margin-left: 86px;
+}
+
+h1{
+    font-family: "Cairo", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.titulo p{
+    margin-left: 50px;
+    font-family: "Cairo", sans-serif;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#inputComIcon{
+    display: flex;
+    align-items: center;
+}
+
+#inputComIcon img{
+    position: absolute;
+
+}
+
+#img1{
+    margin-left: 660px;
+}
+
+#pesquisa{
+    width: 700px;
+    height: 41px;
+    border-radius: 25px;
+    border: solid black 1px;
+}
+
+#filtro,#pesquisa::placeholder {
+    font-family: "Cairo",sans-serif;
+    padding-left: 20px;
+}
+
+.adcProdButton{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cima a{
+    color: black;
+    font-family: "Cairo",sans-serif;
+    padding: 10px 30px 10px;
+    background-color:#FFC531 ;
+    border-radius: 15px;
+}
+
+.cursos{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.tudo{
+    margin-left: 86px;
+    margin-right: 86px;
+}
+
+.curso{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow:visible;
+    width: 420px;
+    height: 230px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:10px 10px 10px 10px rgb(238, 238, 238);
+}
+
+#desc{
+    font-size: 14px;
+}
+
+#duracao{
+    font-weight: bold;
+    margin-top: 10px;
+    color: #C8854F;
+}
+
+.txtcurso{
+    font-family: "Montserrat", sans-serif;
+    width: 260px;
+    margin-left: 120px;
+}
+
+#playb{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #C8854F;
+    border-radius: 100px;
+    right: 380px;
+}
+
+.tudo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.tudo{
+    position: relative;
+}
+
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 250vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 50%;
+}
+
+.popup{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+    height: 414px;
+    background-color: #f0f0f0;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow:10px 10px 5px rgb(230, 230, 230);
+}
+
+.txt{
+   position: absolute;
+   left: 50%;
+   top: 16%;
+   font-family: "Cairo",sans-serif;
+   font-weight: bold;
+}
+
+#assine{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    font-size: 20px;
+}
+
+#assinebtn{
+    padding: 5px 80px 5px 80px;
+    background-color: #D07124;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+.options img {
+    display: none;
+
+}
+
+@media screen and (max-width:430px) {
+    .option {
+        display: flex;
+        align-items: flex-start;
+        padding: 2% 0;
+        background-color: #C8854F;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 18px;
+        width: 45%;
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+
+    .option a {
+        margin: 5% 0 0 18%;
+        font-size: smaller;
+    }
+
+    .options img {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 43%;
+    }
+
+    #valor {
+        margin: 0;
+    }
+
+    .options {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .cima {
+        margin-left: 8%;
+        width: 85%;
+
+    }
+
+    #pesquisa {
+        width: 100%;
+        height: 38px;
+    }
+
+    .titulo {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: larger
+    }
+
+    .titulo p {
+        font-size: smaller;
+        margin-left: 12%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    header #simbMenu {
+        display: block;
+        margin-left: 15%;
+    }
+
+    header {
+        width: auto;
+        margin: 0% 5%;
+        justify-content: space-between;
+        padding: 5% 2%;
+    }
+
+    #conteinerMenu{
+        display: flex;
+    }
+
+    #conteinerMenu a{
+        color: #383838;
+        padding: 3% 0% 3% 14%;
+        display: flex;
+        align-items: center;
+        font-family: "Cairo", sans-serif;
+        justify-content: start;
+    }
+
+    #conteinerMenu svg{
+        margin-right: 15%;
+    }
+
+    #conteinerMenu button{
+        background-color: #F7FFE5;
+        height: 32px;
+        text-align: center;
+        border: none;
+        padding: 0 25%;
+        box-shadow: 2px 2px 5px rgb(187 187 187);
+        border-radius: 50px;
+    }
+
+    #inputComIcon {
+        width: 100%;
+    }
+
+    #img1 {
+        margin-left: 75%;
+        width: 6%;
+    }
+
+    #pesquisa {
+        padding-left: 6%;
+        font-size: medium;
+    }
+
+    .cursos {
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tudo {
+        position: static;
+        width: 80%;
+        margin: 0;
+    }
+
+    .curso {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 6% 0;
+        box-shadow: 0px 3px 10px 15px rgb(238, 238, 238);
+    }
+
+    #playb {
+        right: 80%;
+    }
+
+    .txtcurso {
+        font-family: "Montserrat", sans-serif;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    h3 {
+        margin-right: 2%;
+        font-size: medium;
+        font-weight: 700;
+        margin-bottom: 4%;
+    }
+
+    #desc {
+        font-size: small;
+    }
+
+    #duracao {
+        font-size: small;
+    }
+
+    
+    .blur {
+        position: absolute;
+        width: 100%;
+        height: 280vh;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 50%;
+    }
+
+    .popup {
+        left: 50%;
+        top: 10%;
+        width: 85%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imagempop {
+        width: 42%;
+    }
+
+    .imagempop img {
+        width: 100%;
+    }
+
+    .txt {
+        position: static;
+        width: 50%;
+    }
+
+    .txt img {
+        margin-top: 8%;
+    }
+
+    #assine {
+        margin-top: 6%;
+        margin-bottom: 14%;
+        width: 90%;
+        font-size: smaller;
+    }
+
+    #assinebtn {
+        padding: 2% 15%;
+        border-radius: 6px;
+        font-size: small;
+    }
+}

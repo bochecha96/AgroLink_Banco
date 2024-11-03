@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-direction: row;
+    padding: 1% 0;
+    padding-top: 20px;
+}
+
+#simbMenu{
+    display: none;
+}
+
+#menu_mobile{
+    position:fixed;
+    top: 78px;
+    height: 100vh;
+    width: 100%;
+    z-index: 5;
+    display: none;
+    justify-content: flex-end;
+}
+
+#conteinerMenu{
+    background: white;
+    width: 54%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #615f5f;
+    border-left: 1px solid #615f5f;
+}
+
+.logo p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+.navbar a {
+    font-family: "Cairo", sans-serif;
+    color: black;
+}
+
+.navbar img {
+    width: 10%;
+}
+
+.options {
+    width: 100%;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px 10px 10px 60px;
+    background-color: #C8854F;
+    width: 554px;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 18px;
+}
+
+.option a {
+    font-family: "Cairo", sans-serif;
+    color: white;
+}
+
+.inicio {
+    width: 100%;
+    margin-left: 70px;
+    margin-top: 50px;
+    font-family: "Cairo", sans-serif;
+}
+
+.planos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.planocard {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    color: #C8854F;
+    margin-top: 40px;
+}
+
+p {
+    font-family: "Cairo", sans-serif;
+}
+
+#desc {
+    text-align: center;
+    font-weight: 600;
+}
+
+.checks {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.checks img {
+    width: 30px;
+}
+
+.planosbtn {
+    padding: 10px 40px 10px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #C8854F;
+    color: white;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+.btn1 {
+    margin-top: 50%;
+}
+
+.btn2 {
+    margin-top: 25%;
+}
+
+.options img {
+    display: none;
+
+}
+
+@media screen and (max-width:430px) {
+    .planos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin-top: 50px;
+        flex-direction: column;
+        margin-bottom: 10%;
+        margin-top: 8%;
+    }
+
+    .option {
+        display: flex;
+        align-items: flex-start;
+        padding: 2% 0;
+        background-color: #C8854F;
+        border-radius: 0px 20px 20px 0px;
+        font-size: 18px;
+        width: 45%;
+        flex-direction: column;
+        gap: 0;
+        height: auto;
+    }
+
+    .option a {
+        margin: 5% 0 0 18%;
+        font-size: smaller;
+    }
+
+    .options img {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 43%;
+    }
+
+    #valor {
+        margin: 0;
+    }
+
+    .options {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    header #simbMenu {
+        display: block;
+        margin-left: 15%;
+    }
+
+    header {
+        width: auto;
+        margin: 0% 5%;
+        justify-content: space-between;
+        padding: 5% 2%;
+    }
+
+    #conteinerMenu{
+        display: flex;
+    }
+
+    #conteinerMenu a{
+        color: #383838;
+        padding: 3% 0% 3% 14%;
+        display: flex;
+        align-items: center;
+        font-family: "Cairo", sans-serif;
+        justify-content: start;
+    }
+
+    #conteinerMenu svg{
+        margin-right: 15%;
+    }
+
+    #conteinerMenu button{
+        background-color: #F7FFE5;
+        height: 32px;
+        text-align: center;
+        border: none;
+        padding: 0 25%;
+        box-shadow: 2px 2px 5px rgb(187 187 187);
+        border-radius: 50px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .inicio {
+        width: auto;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .planocard {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checks {
+        margin-left: 0;
+        margin-top: 6%;
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    .checks img {
+        margin-right: 5%;
+    }
+
+    .btn1 {
+        margin-top: 29%;
+        margin-left: 0;
+        margin-bottom: 8%;
+    }
+
+    .btn2 {
+        margin-top: 24%;
+        margin-left: 0;
+        margin-bottom: 8%;
+    }
+}
