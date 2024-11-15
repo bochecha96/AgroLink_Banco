@@ -178,11 +178,11 @@
                                     Fazenda Laje Grande - saca</p>
                             </div>
                         </td>
-                        <td class="anula">50kg</td>
-                        <td class="anula">produto.categoria_atual %></td>
-                        <td><%= produto.quantidade %></td>
+                        <td class="anula"><%=produto.peso %>kg</td>
+                        <td class="anula"><%=produto.categoria_atual %></td>
+                        <td><%=produto.quantidade%></td>
                         <td>3</td>
-                        <td id="valor">R$ <%= produto.valor %></td>
+                        <td id="valor">R$<%= produto.valor %></td>
 
                         <td class="delet">
                             <form action="/Deletar_Produto/<%= produto.id_produto %>" method="get">
