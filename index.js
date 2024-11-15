@@ -17,9 +17,9 @@ app.get("/Gerenciar_Produto", async(req,res) =>{
   res.render("meusprodutosfazendeiro", { produto });
 })
 
-app.get("/Gerenciar_Produtos/:id", async(req,res) =>{
+app.get("/Deletar_Produto/:id", async(req,res) =>{
   await db.DeleteProdutos(req.params.id);
-  res.sendStatus(200)
+  res.redirect("/Gerenciar_Produto"); 
 })
 
 app.get("/Adicionar_Produto", async(req,res) =>{
