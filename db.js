@@ -38,7 +38,21 @@ async function Connect() {
             await produto.query(query,values);
             }
 
+        async function InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual) {
+            const produto = await Connect();
+            const query = "INSERT INTO produto (nome_produto, valor, descricao, quantidade, categoria_atual) VALUES ($1, $2, $3, $4, $5)";
+            const values = [nome_produto, valor, descricao, quantidade, categoria_atual];
+        
+        try {
+            await produto.query(query, values);
+        } catch (err) {
+            console.error('Erro ao inserir produto', err);
+            throw err;
+        }
+            }
+
     module.exports = {
         ShowProdutos,
-        DeleteProdutos 
+        DeleteProdutos,
+        InserirProdutos
     }

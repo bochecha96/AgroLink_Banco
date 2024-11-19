@@ -64,7 +64,7 @@
         <img src="img/imgVacas.png" alt="" >
     </div>
 
-    <form action="#" method="POST" class="produtosTotal">
+    <form action="/adicionado_produto" method="POST" class="produtosTotal">
         
         <div class="infoProdutoCima">
             
@@ -78,31 +78,31 @@
             <div class="infosProdutos">
                 <div id="inp1" class="info1">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome_produto" id="nome" required>
                 </div>
                 <div class="info2">
                     <div class="inputTodo">
                         <label for="categoria">Categoria</label>
                         <div id="inp2" class="infos">
-                            <select name="categoria" id="categoria" class="inputsIguais">
+                            <select name="categoria_atual" id="categoria" class="inputsIguais" >
                                 <option value=""></option>
-                                <option value="graos">Grãos</option>
-                                <option value="legumes">Legumes</option>
-                                <option value="frutas">Frutas</option>
-                                <option value="carne">Carne</option>
+                                <option value="Grãos">Grãos</option>
+                                <option value="Legumes">Legumes</option>
+                                <option value="Frutas">Frutas</option>
+                                <option value="Carnes">Carne</option>
                             </select>
                         </div>
                     </div>
                     <div class="inputTodo">
                         <label for="quantidade">Quantidade</label>
                         <div id="inp3" class="infos">
-                            <input type="text" name="quantidade" id="quantidade">
+                            <input type="number" name="quantidade" id="quantidade" required>
                         </div>
                     </div>
                     <div class="inputTodo">
                         <label for="valor">Valor</label>
                         <div id="inp4" class="infos">
-                            <input type="text" name="valor" id="valor">
+                            <input type="text" name="valor" id="valor" required>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
         <div class="info3">
             <div class="input3">
                 <label for="descricao">Descrição</label>
-                    <input type="text" name="descricao" id="descricao"> 
+                    <input type="text" name="descricao" id="descricao" required> 
             </div>
         </div>
 

@@ -7,10 +7,11 @@ const express = require("express");
 const path = require("path"); 
 const app= express();
 
+
 app.set('view engine', 'ejs'); 
 
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.urlencoded({ extended: true }));
 
 app.get("/Gerenciar_Produto", async(req,res) =>{
   const produto = await db.ShowProdutos();
@@ -26,6 +27,17 @@ app.get("/Adicionar_Produto", async(req,res) =>{
     const produto = await db.ShowProdutos();
     res.render("adicionarproduto", { produto });
   })
+
+app.post('/adicionado_produto', async (req, res) => {
+
+  const { nome_produto, valor, descricao, quantidade, categoria_atual } = req.body;
+
+  try {
+    const produto = await db.InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual);
+      res.send("Produto adicionado com sucesso!");
+  } catch (err) {
+      res.status(500).send("Erro ao adicionar produto.");
+  }});
 
 
 
