@@ -21,7 +21,7 @@
             <a href="MeusProdutosFazendeiro.html">Meus Produtos</a>
             <a href="MeusProdutosFazendeiro.html">Estoque</a>
             <a href="MeusProdutosFazendeiro.html">Adicionar Produto</a>
-            <img src="img/perfilIcon.png" alt="ícone do perfil">
+            <a href="ContaFazenda.html" id="conteinerIcon"><img src="img/perfilIcon.png" alt="ícone do perfil"></a>
         </div>
         <svg id="simbMenu" xmlns="http://www.w3.org/2000/svg" width="8%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" onclick="showMenu()">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -84,7 +84,7 @@
                     <div class="inputTodo">
                         <label for="categoria">Categoria</label>
                         <div id="inp2" class="infos">
-                            <select name="categoria_atual" id="categoria" class="inputsIguais" >
+                            <select name="categoria_atual" id="categoria" class="inputsIguais">
                                 <option value=""></option>
                                 <option value="Grãos">Grãos</option>
                                 <option value="Legumes">Legumes</option>
@@ -93,6 +93,14 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="inputTodo">
+                        <label for="categoria">Peso</label>
+                        <div id="inp2" class="infos">
+                            <input type="text" name="peso" id="peso" required>
+                        </div>
+                    </div>
+
                     <div class="inputTodo">
                         <label for="quantidade">Quantidade</label>
                         <div id="inp3" class="infos">

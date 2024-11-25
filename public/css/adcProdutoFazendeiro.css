@@ -74,8 +74,12 @@ header {
     color: black;
 }
 
-.navbar img {
+.navbar #conteinerIcon{
     width: 10%;
+}
+
+.navbar img {
+    width: 100%;
 }
 
 .options {
@@ -97,6 +101,12 @@ header {
 .option a {
     font-family: "Cairo", sans-serif;
     color: white;
+}
+
+input, select{
+    outline: 0;
+    padding-left: 5%;
+    font-size: medium;
 }
 
 h1 {
@@ -133,7 +143,7 @@ h1 {
 
 
 #nome {
-    width: 100%;
+    width: 95%;
     height: 53px;
     border-radius: 5px;
     border: solid black 1px;
@@ -153,10 +163,11 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 3%;
 }
 
 .inputTodo {
-    width: 30%;
+    width: 24%;
 }
 
 .info3 {
@@ -182,7 +193,7 @@ h1 {
 }
 
 #categoria {
-    width: 100%;
+    width: 95%;
     height: 53px;
     border: solid black 1px;
     border-radius: 5px;
@@ -197,8 +208,16 @@ h1 {
     width: 100%;
 }
 
+#peso {
+    width: 95%;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 #quantidade {
-    width: 100%;
+    width: 95%;
     height: 50px;
     border: solid black 1px;
     border-radius: 5px;
@@ -206,7 +225,7 @@ h1 {
 }
 
 #valor {
-    width: 100%;
+    width: 95%;
     height: 50px;
     border: solid black 1px;
     border-radius: 5px;
@@ -214,7 +233,7 @@ h1 {
 }
 
 #descricao {
-    min-width: 100%;
+    min-width: 95%;
     min-height: 116px;
     border: solid black 1px;
     border-radius: 5px;
@@ -226,7 +245,7 @@ h1 {
 }
 
 .infosProdutos {
-    width: 60%;
+    width: 64%;
 }
 
 label {
@@ -515,4 +534,18 @@ button {
         margin-top: 2%;
         margin-bottom: 1%;
     }
+}
+@media screen and (max-width: 950px) {
+    .infoProdutoCima {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .infosProdutos {
+        width: 100%;
+    }
+    .fotoProduto {
+        width: 100%;
+    }
+
 }

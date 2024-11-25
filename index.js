@@ -30,11 +30,10 @@ app.get("/Adicionar_Produto", async(req,res) =>{
 
 app.post('/adicionado_produto', async (req, res) => {
 
-  const { nome_produto, valor, descricao, quantidade, categoria_atual } = req.body;
-
+  const { nome_produto, valor, descricao, quantidade, categoria_atual,peso } = req.body;
   try {
-    const produto = await db.InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual);
-      res.send("Produto adicionado com sucesso!");
+    const produto = await db.InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual,peso);
+    res.redirect("/Gerenciar_Produto"); 
   } catch (err) {
       res.status(500).send("Erro ao adicionar produto.");
   }});
