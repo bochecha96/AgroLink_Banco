@@ -250,20 +250,7 @@ input {
     border-radius: 20px 0 0 20px;
 }
 
-#conteinerButtonAddItem {
-    width: 95%;
-    display: flex;
-    justify-content: end;
-}
 
-#conteinerButtonAddItem button {
-    padding: 1% 4%;
-    background-color: #f9b300;
-    border: 1px solid #282626;
-    border-radius: 20px;
-    margin-top: 1%;
-    cursor: pointer;
-}
 
 #conteinerAdicionar {
     position: fixed;
@@ -635,9 +622,6 @@ table button img:hover {
         margin-top: 2%;
     }
 
-    #conteinerButtonAddItem button{
-        margin-top: 2%;
-    }
 
     #categoria{
         height: 32px;
