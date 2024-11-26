@@ -20,7 +20,7 @@
         <div class="navbar">
             <a href="MeusProdutosFazendeiro.html">Meus Produtos</a>
             <a href="MeusProdutosFazendeiro.html">Estoque</a>
-            <a href="MeusProdutosFazendeiro.html">Adicionar Produto</a>
+            <a href="/Adicionar_Produto">Adicionar Produto</a>
             <img src="img/perfilIcon.png" alt="ícone do perfil">
         </div>
         <svg id="simbMenu" xmlns="http://www.w3.org/2000/svg" width="8%" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" onclick="showMenu()">
@@ -173,7 +173,7 @@
                         
                     <tr>
                         <td>
-                            <div class="imgtit"><img src="img/imgProdutoPerfil.png" alt="Feijão Carioca">
+                            <div class="imgtit"><img src="/uploads/<%= produto.imagem %>" alt="<%= produto.nome_produto %>" />
                                 <p><%= produto.nome_produto %>
                                     Fazenda Laje Grande - saca</p>
                             </div>

@@ -38,10 +38,10 @@ async function Connect() {
             await produto.query(query,values);
             }
 
-        async function InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual,peso) {
+        async function InserirProdutos(nome_produto, valor, descricao, quantidade, categoria_atual,peso,imagem) {
             const produto = await Connect();
-            const query = "INSERT INTO produto (nome_produto, valor, descricao, quantidade, categoria_atual,peso) VALUES ($1, $2, $3, $4, $5, $6)";
-            const values = [nome_produto, valor, descricao, quantidade, categoria_atual,peso];
+            const query = "INSERT INTO produto (nome_produto, valor, descricao, quantidade, categoria_atual,peso,imagem) VALUES ($1, $2, $3, $4, $5, $6,$7)";
+            const values = [nome_produto, valor, descricao, quantidade, categoria_atual,peso,imagem];
         
         try {
             await produto.query(query, values);

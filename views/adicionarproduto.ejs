@@ -18,7 +18,7 @@
         </div>
 
         <div class="navbar">
-            <a href="MeusProdutosFazendeiro.html">Meus Produtos</a>
+            <a href="/Gerenciar_Produto">Meus Produtos</a>
             <a href="MeusProdutosFazendeiro.html">Estoque</a>
             <a href="MeusProdutosFazendeiro.html">Adicionar Produto</a>
             <a href="ContaFazenda.html" id="conteinerIcon"><img src="img/perfilIcon.png" alt="ícone do perfil"></a>
@@ -64,7 +64,7 @@
         <img src="img/imgVacas.png" alt="" >
     </div>
 
-    <form action="/adicionado_produto" method="POST" class="produtosTotal">
+    <form action="/adicionado_produto" method="POST" class="produtosTotal" enctype="multipart/form-data">
         
         <div class="infoProdutoCima">
             
@@ -72,6 +72,7 @@
                 <h1>Adicionar Produtos</h1>
                 <div class="foto">
                     <img src="img/produtoIcon.png" alt="">
+                    <input type="file" id="imagem" name="imagem" accept="image/*" required>
                     <p>Foto do produto</p>
                 </div>
             </div>
